@@ -26,7 +26,7 @@
         $identification = "";
         $user_password = "";
 
-        if(isset($data->name) && isset($data->lastname) && isset($data->email) && isset($data->type_id) && isset($data->identification) && isset($data->user_password)){
+        if (isset($data->name) && isset($data->lastname) && isset($data->email) && isset($data->type_id) && isset($data->identification) && isset($data->user_password)){
             $name = $data->name;
             $lastname= $data->lastname;
             $email = $data->email;

@@ -5,6 +5,7 @@
         $request = file_get_contents('php://input');
         $data = json_decode($request);
         $id = $data->id;
+        
         $sql = "SELECT * FROM user WHERE identification={$id}";
         $result = $conn->query($sql);
 
@@ -17,7 +18,8 @@
         else {
             echo json_encode(array('Res'=>array('Success'=>false, 'Data'=> '', 'Error'=>array('Title'=>'Invalid user', 'Message'=>'User does not exist, please Sign Up'))));
         }
-    } else {
+    } 
+    else {
         echo json_encode(array('Res'=>array('Success'=>false, 'Data'=> '', 'Error'=>array('Title'=>'Unable DB', 'Message'=>'Unable to connect to the DB, please try again'))));
     }
 ?>
