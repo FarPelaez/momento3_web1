@@ -22,7 +22,7 @@
                     echo json_encode(array('Res'=>array('Success'=>true, 'Data'=>$property, 'Error'=>array('Title'=>'', 'Message'=>''))));
                 }
                 else {
-                    echo json_encode(array('Res'=>array('Success'=>false, 'Data'=> '', 'Error'=>array('Title'=>'No registers', 'Message'=>'There is no properties registered with than UserId, please try again'))));
+                    echo json_encode(array('Res'=>array('Success'=>false, 'Data'=> '', 'Error'=>array('Title'=>'No registers', 'Message'=>'There is no properties registered with that UserId, please try again'))));
                 }
             } 
         }
